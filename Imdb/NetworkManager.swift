@@ -15,19 +15,19 @@ class NetworkManager {
             let request = URLRequest(url: url)
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if let data = data {
-                do {
-                    print(String(data: data, encoding: .utf8) ?? "not a string")
-                    let film = try JSONDecoder().decode(T.self, from: data )
-                    complition(film)
-                    print(film)
+                    do {
+                        print(String(data: data, encoding: .utf8) ?? "not a string")
+                        let film = try JSONDecoder().decode(T.self, from: data )
+                        complition(film)
+                        print(film)
+                    }
+                    catch let error {
+                        print("Error: \(error)")
+                    }
                 }
-                catch let error {
-                    print("Error: \(error)")
-                }
-            }
             }.resume()
+        }
     }
-}
 }
 
 //    static func getData(path: String , type: RequestType, body: Data?, completion: ((Data) -> ())?) {

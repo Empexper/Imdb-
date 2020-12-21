@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831995C9258FB22900DADA21 /* KingfisherClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831995C8258FB22900DADA21 /* KingfisherClone.swift */; };
 		84AC49C4258A304E00F00976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC49C3258A304E00F00976 /* AppDelegate.swift */; };
 		84AC49C6258A304E00F00976 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC49C5258A304E00F00976 /* SceneDelegate.swift */; };
 		84AC49CB258A304E00F00976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AC49C9258A304E00F00976 /* Main.storyboard */; };
@@ -17,9 +18,13 @@
 		84AC49E1258A4EF700F00976 /* DataProviderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC49E0258A4EF700F00976 /* DataProviderTableView.swift */; };
 		84AC49E4258A517700F00976 /* CellFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC49E3258A517700F00976 /* CellFilm.swift */; };
 		84D90682258B78890092636D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D90681258B78890092636D /* NetworkManager.swift */; };
+		84D90695258F8E7A0092636D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D90694258F8E7A0092636D /* DetailsViewController.swift */; };
+		84D90698258F8ED50092636D /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D90697258F8ED50092636D /* DetailsModel.swift */; };
+		84D9069D258FBAEF0092636D /* DelegateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9069C258FBAEF0092636D /* DelegateTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831995C8258FB22900DADA21 /* KingfisherClone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherClone.swift; sourceTree = "<group>"; };
 		84AC49C0258A304E00F00976 /* Imdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AC49C3258A304E00F00976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84AC49C5258A304E00F00976 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,9 @@
 		84AC49E0258A4EF700F00976 /* DataProviderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTableView.swift; sourceTree = "<group>"; };
 		84AC49E3258A517700F00976 /* CellFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFilm.swift; sourceTree = "<group>"; };
 		84D90681258B78890092636D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		84D90694258F8E7A0092636D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		84D90697258F8ED50092636D /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		84D9069C258FBAEF0092636D /* DelegateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +74,15 @@
 			children = (
 				84AC49C9258A304E00F00976 /* Main.storyboard */,
 				84AC49DC258A4BFB00F00976 /* ViewController.swift */,
+				84D90694258F8E7A0092636D /* DetailsViewController.swift */,
 				84AC49E0258A4EF700F00976 /* DataProviderTableView.swift */,
+				84D9069C258FBAEF0092636D /* DelegateTableView.swift */,
 				84D90681258B78890092636D /* NetworkManager.swift */,
+				831995C8258FB22900DADA21 /* KingfisherClone.swift */,
 				84AC49E3258A517700F00976 /* CellFilm.swift */,
 				84AC49C5258A304E00F00976 /* SceneDelegate.swift */,
 				84AC49D8258A307200F00976 /* Film.swift */,
+				84D90697258F8ED50092636D /* DetailsModel.swift */,
 				84AC49C3258A304E00F00976 /* AppDelegate.swift */,
 				84AC49CC258A304F00F00976 /* Assets.xcassets */,
 				84AC49CE258A304F00F00976 /* LaunchScreen.storyboard */,
@@ -149,9 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D9069D258FBAEF0092636D /* DelegateTableView.swift in Sources */,
 				84AC49E1258A4EF700F00976 /* DataProviderTableView.swift in Sources */,
+				84D90698258F8ED50092636D /* DetailsModel.swift in Sources */,
 				84AC49D9258A307200F00976 /* Film.swift in Sources */,
 				84AC49C4258A304E00F00976 /* AppDelegate.swift in Sources */,
+				84D90695258F8E7A0092636D /* DetailsViewController.swift in Sources */,
+				831995C9258FB22900DADA21 /* KingfisherClone.swift in Sources */,
 				84D90682258B78890092636D /* NetworkManager.swift in Sources */,
 				84AC49E4258A517700F00976 /* CellFilm.swift in Sources */,
 				84AC49DD258A4BFB00F00976 /* ViewController.swift in Sources */,

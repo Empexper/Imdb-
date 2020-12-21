@@ -15,9 +15,10 @@ struct Film: Codable {
     var Poster: String?
 }
 
-    struct Result: Codable {
-      let Search: [Film]?
-    }
+struct Result: Codable {
+    let Search: [Film]?
+}
+
 
 
 
