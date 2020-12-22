@@ -9,7 +9,7 @@ import UIKit
 
 class DelegateTableView: NSObject, UITableViewDelegate{
    
-    weak var controller: ViewController?
+    var controller: ViewController?
   //  let dataProvider = DataProviderTableView()
     var films = [Film]()
     
@@ -20,6 +20,7 @@ class DelegateTableView: NSObject, UITableViewDelegate{
         let film = films[indexPath.row]
         guard let Id = film.imdbID else { return }
         detailsVc.imdbID = Id
+        
         controller?.navigationController?.pushViewController(detailsVc, animated: true)
     }
     

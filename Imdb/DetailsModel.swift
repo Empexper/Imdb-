@@ -12,6 +12,6 @@ struct DetailsOfFilm: Codable {
     var Released: String?
     var Genre: String?
     var imdbRating: String?
-    var poster: String?
+    var Poster: String?
 }
 

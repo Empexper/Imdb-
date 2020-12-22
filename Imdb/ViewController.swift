@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    let url = "https://www.omdbapi.com/?apikey=d78f7557&s=Hacker&type=movie"
+    
+    let url = "https://www.omdbapi.com/?apikey=9cee03af&s=Hacker&type=movie"
     
     let dataProvider = DataProviderTableView()
     let delegateTableView = DelegateTableView()
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = dataProvider
         tableView.delegate = delegateTableView
+        delegateTableView.controller = self 
         
         tableView.rowHeight = 200
         NetworkManager.genericFetch(urlString: url, complition: { (films: Result) in
