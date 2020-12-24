@@ -35,7 +35,7 @@ class DataProviderTableView: NSObject, UITableViewDataSource {
         imageView?.image = nil
         
         if let url = URL(string: poster) {
-            KingfisherClone.shared.imageFromURL(url) { (image) in
+            ImageLoader.shared.imageFromURL(url) { (image) in
                 DispatchQueue.main.async {
                     imageView?.image = image
                 }

@@ -8,9 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //// 1) 
     
     
     @IBOutlet var tableView: UITableView!
+    
     
     
     let url = "https://www.omdbapi.com/?apikey=9cee03af&s=Hacker&type=movie"
@@ -26,7 +28,7 @@ class ViewController: UIViewController {
         delegateTableView.controller = self 
         
         tableView.rowHeight = 200
-        NetworkManager.genericFetch(urlString: url, complition: { (films: Result) in
+        NetworkManager.genericFetch(urlString: API.movieHacker.rawValue , complition: { (films: Result) in
             print(films)
             if let films = films.Search {
                 self.dataProvider.films = films

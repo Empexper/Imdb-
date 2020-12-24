@@ -6,6 +6,13 @@
 //
 
 import Foundation
+enum API: String {
+    case movieHacker = "https://www.omdbapi.com/?apikey=9cee03af&s=Hacker&type=movie"
+    case selectedMovie = "https://www.omdbapi.com/?apikey=9cee03af&i="
+    
+}
+
+// это должно быть на протоколах!!!! 
 
 class NetworkManager {
     
@@ -16,10 +23,10 @@ class NetworkManager {
             URLSession.shared.dataTask(with: request) { data, response, error in
                 if let data = data {
                     do {
-                        print(String(data: data, encoding: .utf8) ?? "not a string")
+                        //print(String(data: data, encoding: .utf8) ?? "not a string")
                         let film = try JSONDecoder().decode(T.self, from: data )
                         complition(film)
-                        print(film)
+                       // print(film)
                     }
                     catch let error {
                         print("Error: \(error)")

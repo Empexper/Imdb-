@@ -7,9 +7,9 @@
 
 import UIKit
 
-class KingfisherClone {
+class ImageLoader {
     
-    static let shared = KingfisherClone()
+    static let shared = ImageLoader()
     
     var cache: [URL : UIImage] = [:]
 
