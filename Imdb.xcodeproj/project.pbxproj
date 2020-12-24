@@ -18,9 +18,11 @@
 		84AC49E1258A4EF700F00976 /* DataProviderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC49E0258A4EF700F00976 /* DataProviderTableView.swift */; };
 		84AC49E4258A517700F00976 /* CellFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC49E3258A517700F00976 /* CellFilm.swift */; };
 		84D90682258B78890092636D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D90681258B78890092636D /* NetworkManager.swift */; };
-		84D90695258F8E7A0092636D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D90694258F8E7A0092636D /* DetailsViewController.swift */; };
+		84D90695258F8E7A0092636D /* ShortDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D90694258F8E7A0092636D /* ShortDetailsViewController.swift */; };
 		84D90698258F8ED50092636D /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D90697258F8ED50092636D /* DetailsModel.swift */; };
 		84D9069D258FBAEF0092636D /* DelegateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9069C258FBAEF0092636D /* DelegateTableView.swift */; };
+		901289392594BB8B008A4034 /* FullDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901289382594BB8B008A4034 /* FullDetailsModel.swift */; };
+		9012893E2594BE24008A4034 /* FullDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012893D2594BE24008A4034 /* FullDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +39,11 @@
 		84AC49E0258A4EF700F00976 /* DataProviderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTableView.swift; sourceTree = "<group>"; };
 		84AC49E3258A517700F00976 /* CellFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFilm.swift; sourceTree = "<group>"; };
 		84D90681258B78890092636D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		84D90694258F8E7A0092636D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		84D90694258F8E7A0092636D /* ShortDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortDetailsViewController.swift; sourceTree = "<group>"; };
 		84D90697258F8ED50092636D /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
 		84D9069C258FBAEF0092636D /* DelegateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateTableView.swift; sourceTree = "<group>"; };
+		901289382594BB8B008A4034 /* FullDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDetailsModel.swift; sourceTree = "<group>"; };
+		9012893D2594BE24008A4034 /* FullDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				84AC49DC258A4BFB00F00976 /* ViewController.swift */,
-				84D90694258F8E7A0092636D /* DetailsViewController.swift */,
+				84D90694258F8E7A0092636D /* ShortDetailsViewController.swift */,
+				9012893D2594BE24008A4034 /* FullDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -84,8 +89,9 @@
 		840126BA2591F9A30093D04A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84D90697258F8ED50092636D /* DetailsModel.swift */,
 				84AC49D8258A307200F00976 /* Film.swift */,
+				84D90697258F8ED50092636D /* DetailsModel.swift */,
+				901289382594BB8B008A4034 /* FullDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,12 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901289392594BB8B008A4034 /* FullDetailsModel.swift in Sources */,
 				84D9069D258FBAEF0092636D /* DelegateTableView.swift in Sources */,
 				84AC49E1258A4EF700F00976 /* DataProviderTableView.swift in Sources */,
 				84D90698258F8ED50092636D /* DetailsModel.swift in Sources */,
 				84AC49D9258A307200F00976 /* Film.swift in Sources */,
+				9012893E2594BE24008A4034 /* FullDetailsViewController.swift in Sources */,
 				84AC49C4258A304E00F00976 /* AppDelegate.swift in Sources */,
-				84D90695258F8E7A0092636D /* DetailsViewController.swift in Sources */,
+				84D90695258F8E7A0092636D /* ShortDetailsViewController.swift in Sources */,
 				831995C9258FB22900DADA21 /* ImageLoader.swift in Sources */,
 				84D90682258B78890092636D /* NetworkManager.swift in Sources */,
 				84AC49E4258A517700F00976 /* CellFilm.swift in Sources */,

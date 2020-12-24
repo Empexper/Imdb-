@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct DetailsOfFilm: Codable {
+struct ShortDetailsOfFilm: Codable {
     var Title: String?
     var Released: String?
     var Genre: String?
     var imdbRating: String?
     var Poster: String?
+    
 }
 

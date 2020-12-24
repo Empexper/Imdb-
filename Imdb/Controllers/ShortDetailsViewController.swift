@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController {
+class ShortDetailsViewController: UIViewController {
     
     
     @IBOutlet private var posterImage: UIImageView!
@@ -17,7 +17,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet private var ratingLabel: UILabel!
     @IBOutlet private var releasedLabel: UILabel!
     
-    private var details = DetailsOfFilm()
+    private var details = ShortDetailsOfFilm()
     var imdbID: String = ""
     private var url: String  {
         get {
@@ -39,7 +39,7 @@ class DetailsViewController: UIViewController {
     }
     
     private func setUpLabels() {
-        NetworkManager.genericFetch(urlString: api ) { (film: DetailsOfFilm) in
+        NetworkManager.genericFetch(urlString: api ) { (film: ShortDetailsOfFilm) in
             self.details = film
             DispatchQueue.main.async {
                 self.imdbIDLabel.text = self.imdbID

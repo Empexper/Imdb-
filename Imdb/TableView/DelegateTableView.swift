@@ -16,7 +16,7 @@ class DelegateTableView: NSObject, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let detailsVc = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+        let detailsVc = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! ShortDetailsViewController
         let film = films[indexPath.row]
         guard let Id = film.imdbID else { return }
         detailsVc.imdbID = Id
